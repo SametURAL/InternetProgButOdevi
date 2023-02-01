@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>
+    <title>Oturum açınız..</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="/assets/js/PureSnow.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(173, 126, 126, 0);
+    font-size: 16px;
+}
+
+body {
+    background: linear-gradient(90deg, #125ed2 0%, #2aceb2 100%);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    padding: 50px;
+}
+
+.container {
+    background-color: #73047b;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+}
+
+.container h1 {
+    color: white;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+input,
+button {
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    font-size: 1rem;
+}
+
+.input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+}
+
+.input:hover {
+    border-color: #999999;
+}
+
+.input:focus {
+    border-color: #73047b;
+}
+
+
+
+.link {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    color: #125ed2;
+    border: 1px solid #125ed2;
+    border-radius: 3px;
+    padding: 12px 0;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-top: 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.link:hover {
+    border-color: #73047b;
+    background-color: #125ed2;
+    color: #ffffff;
+    
+}
+
+.giris{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    color: #125ed2;
+    border: 1px solid #125ed2;
+    border-radius: 3px;
+    padding: 12px 0;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-top: 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.giris:hover{
+    border-color: #73047b;
+    background-color: #125ed2;
+    color: #ffffff;
+}
+
+.anasayfa{
+    display: inline-block;
+    width: 100%;
+    background:#73047b;
+    color: #125ed2;
+    border: 1px solid #125ed2;
+    border-radius: 3px;
+    padding: 12px 0;
+    cursor: pointer;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.anasayfa:hover{
+    border-color: #73047b;
+    background-color: #125ed2;
+    color: #ffffff;
+}
+
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+
+.success-msg,
+.err-msg {
+    color: #eda12d;
+    border: 1px solid #eda12d;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.success-msg {
+    color: #ffffff;
+    background-color: #125ed2;
+    border-color: #73047b;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile .img {
+    font-size: 50px;
+}
+
+.profile h2 {
+    color: white;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+}
+
+.isim{
+    color: white;
+}
+
+.profile span {
+    display: block;
+    margin-bottom: 20px;
+    color: #999999;
+}
+
+.profile a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #eda12d;
+    color: #eda12d;
+    border-radius: 3px;
+}
+
+.profile a:hover {
+    border-color: #73047b;
+    background-color: #eda12d;
+    color: #ffffff;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Chat Uygulamasına Hoşgeldiniz</h1>
+    <form action="message.html" method="GET">
+        <label for="user_username">Kullanıcı adın</label>
+        <input type="text" class="input" name="username" autocomplete="off" id="user_username" placeholder="Kullanıcı adınızı giriniz">
+        <label for="user_pass">Diğer kullanıcının adı</label>
+        <input class="input" name="message" id="user_pass" placeholder="Kullanıcı adınızı giriniz">
+
+        <input class="giris" type="submit" value="Mesajlaşmaya başla">
+
+        
+    </form>
+</div>
+</body>
+
